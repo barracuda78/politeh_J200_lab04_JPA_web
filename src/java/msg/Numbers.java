@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @NamedQueries({
       @NamedQuery(name = "Numbers.findAll", query = "SELECT n FROM Numbers n")
     //, @NamedQuery(name = "Numbers.getTotal", query = "SELECT sum(Numbers n) FROM Numbers n")
-    //, @NamedQuery(name = "Numbers.cleanNumbers", query = "DELETE FROM Numbers")    
+    , @NamedQuery(name = "Numbers.cleanNumbers", query = "DELETE FROM Numbers")    
     , @NamedQuery(name = "Numbers.findByNumber", query = "SELECT n FROM Numbers n WHERE n.number = :number")})
 public class Numbers implements Serializable {
 
