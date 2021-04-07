@@ -78,9 +78,9 @@ public class NumbersFacade extends AbstractFacade<Numbers> implements NumbersFac
         return sum;
     }
     
-//    @Override
-//    public int cleanNumbers() {
-//        Query q = em.createNamedQuery("Messages.cleanNumbers");
-//        return q.executeUpdate();                        //--------------------> Может быть тут ошибка?
-//    }
+    @Override
+    public int cleanNumbers() {
+        Query q = em.createNamedQuery("Numbers.cleanNumbers");
+        return q.executeUpdate();                        //--------------------> Может быть тут ошибка?
+    }
 }

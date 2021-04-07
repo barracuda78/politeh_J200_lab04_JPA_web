@@ -17,10 +17,12 @@ import msg.DbMasterLocal;
 @WebServlet(name = "Num", urlPatterns = {"/Num"})
 public class Num extends HttpServlet {
     
-    @EJB
-    private DbMasterLocal dbMaster;
+    //@EJB
+    //private DbMasterLocal dbMaster;
     
-
+    
+    @EJB
+    private NumbersFacadeLocal numbersFacade;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
@@ -28,39 +30,39 @@ public class Num extends HttpServlet {
         
         
         
-        //ArrayList<Integer> numbers = jpaMaster.getNumbers();
-        //int sum = jpaMaster.getTotal();
+        ArrayList<Integer> numbers = numbersFacade.getNumbers();
+        int sum = numbersFacade.getTotal();
         
-//        try (PrintWriter out = response.getWriter()) {
-//
-//            out.println("<!DOCTYPE html>");
-//            out.println("<html>");
-//            out.println("<head>");
-//            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/style01.css\"/>");
-//            out.println("<title>Servlet Test</title>");            
-//            out.println("</head>");
-//            out.println("<body>");
-//            
-//            out.println("<div class=\"box-1\">");
-//            String added;
-//            if(numbers.size() == 0){
-//                added = "чисел в базе нет.";
-//            }
-//            else{
-//                added = "";
-//            }
-//            out.println("<h1><center>Список чисел: <p1>" + added + "</p1></center></h1>");
-//            for(Integer n : numbers){
-//                out.println("<ul>");
-//                out.println("<p1><li><center>" + n + "</center></li></p1>");
-//                out.println("</ul>");
-//            }
-//            out.println("<div>");
-//            out.println("<hr><h1><center>Сумма чисел в базе: <p1>" + sum + "</p1></center></h1>");
-//            
-//            out.println("</body>");
-//            out.println("</html>");
-//        }
+        try (PrintWriter out = response.getWriter()) {
+
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/style01.css\"/>");
+            out.println("<title>Servlet Test</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            
+            out.println("<div class=\"box-1\">");
+            String added;
+            if(numbers.size() == 0){
+                added = "чисел в базе нет.";
+            }
+            else{
+                added = "";
+            }
+            out.println("<h1><center>Список чисел: <p1>" + added + "</p1></center></h1>");
+            for(Integer n : numbers){
+                out.println("<ul>");
+                out.println("<p1><li><center>" + n + "</center></li></p1>");
+                out.println("</ul>");
+            }
+            out.println("<div>");
+            out.println("<hr><h1><center>Сумма чисел в базе: <p1>" + sum + "</p1></center></h1>");
+            
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

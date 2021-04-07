@@ -81,9 +81,9 @@ public class Chooser extends HttpServlet {
             request.setAttribute("stringCleaned", "All messages removed from DB.");
             request.getRequestDispatcher("index.jsp").forward(request, response);
         }else if(request.getParameter("cleanIntegers") != null){
-//            messagesFacade.cleanNumbers();
-//            request.setAttribute("integerCleaned", "All numbers removed from DB");
-//            request.getRequestDispatcher("index.jsp").forward(request, response);
+            numbersFacade.cleanNumbers();
+            request.setAttribute("integerCleaned", "All numbers removed from DB");
+            request.getRequestDispatcher("index.jsp").forward(request, response);
         }else if(request.getParameter("numbers") != null){
             ArrayList<Integer> numbers = numbersFacade.getNumbers();
             request.setAttribute("numbersList", numbers);

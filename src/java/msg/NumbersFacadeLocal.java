@@ -34,5 +34,5 @@ public interface NumbersFacadeLocal {
     boolean writeInteger(Integer number);
     ArrayList<Integer> getNumbers();
     int getTotal();
-    //int cleanNumbers();
+    int cleanNumbers();
 }
