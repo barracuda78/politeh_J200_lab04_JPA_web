@@ -1,17 +1,18 @@
 <%-- 
-    Document   : newjsp
-    Created on : Apr 8, 2021, 11:09:12 PM
+    Document   : index
+    Created on : Apr 8, 2021, 10:37:30 PM
     Author     : ENVY
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.ArrayList"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style01.css"/>
-        <title>Сообщения</title>
+        <title>Messages</title>
     </head>
     <body>
         <header id="main-header">

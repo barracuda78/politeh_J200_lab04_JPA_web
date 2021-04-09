@@ -1,11 +1,17 @@
-<%@page import="java.util.ArrayList"%>
+<%-- 
+    Document   : newjsp
+    Created on : Apr 8, 2021, 11:09:12 PM
+    Author     : ENVY
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style01.css"/>
-        <title>Messages</title>
+        <title>Сообщения</title>
     </head>
     <body>
         <header id="main-header">
@@ -19,7 +25,7 @@
 
         <hr style="border-color: #666666">
 
-        <form action="Chooser" method="GET">
+        <form action="Chooser2" method="GET">
             <div class="container">
                 <div class="box-1">
                     <div>
@@ -27,8 +33,8 @@
 
                     </div>
                     <label>Введите сообщение:</label>
-                    <textarea name="info" placeholder="ваш текст или число..." class="t1"></textarea>    
-                    <!--input type="text" name="info" value="" size="60"/-->
+                    <!--textarea name="info" placeholder="ваш текст или число..." class="t1"></textarea-->    
+                    <input type="text" name="info" value="" size="60" class="b1">
                     <input type="submit" value="Отправить" name="send" class="b1"/>
                 </div>
             </div>
@@ -73,6 +79,7 @@
 
     <%
         ArrayList<String> list = (ArrayList<String>) request.getAttribute("list");
+        System.out.println("-----------------Список сообщений: " + list);
         if (list != null && list.size() > 0) { %>
         <h1>Список сообщений</h1><ul>
         <%

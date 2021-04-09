@@ -3,16 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/coding/politeh/j200JPAweb/web/WEB-INF/glassfish-resources.xml</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/MessagesFacade.java</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/AbstractFacade.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/HtmlPrinter.java</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/StringConsumer.java</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/MessagesFacadeLocal.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/NewServlet.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/NumbersFacadeLocal.java</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/conf/persistence.xml</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/DbMaster.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/web/index2.jsp</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/web/index.jsp</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/DbMasterLocal.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/Chooser2.java</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/Messages.java</file>
             <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/Chooser.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/IntegerConsumer.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/Test.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/web/WEB-INF/glassfish-resources.xml</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/Num.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/Messg.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/Numbers.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/src/java/msg/NumbersFacade.java</file>
+            <file>file:/D:/coding/politeh/j200JPAweb/web/css/style01.css</file>
         </group>
     </open-files>
 </project-private>
